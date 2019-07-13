@@ -25,7 +25,14 @@ $ cordova plugin add --save cordova-plugin-stripe-apple-pay \
 ```
 
 ## Compile on Stripe Test/Production Mode
-To switch between Stripe Test/Production mode, go to Build Settings on xCode. Find the Debug selector under Deployment > Stripe Debug Symbols During Copy > Debug (yes/no)
+To switch between Stripe Test/Production mode, go to Build Settings on xCode and add NDEBUG/DNDEBUG like below:
+
+DEBUG MODE:
+![alt text](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/img/ndebug.png "NDEBUG")
+
+PRODUCTION MODE:
+![alt text](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/img/dndebug.png "DNDEBUG")
+
 
 ## Methods
 The methods available all return promises, or accept success and error callbacks.
@@ -76,7 +83,7 @@ function displayDate() {
   ApplePay.canMakePayments().then(function(message) {
     ApplePay.makePaymentRequest({
       items: [{
-        label: 'Sample Order',
+        label: 'Test Order',
         amount: 7.60
       }],
       currencyCode: 'AUD',
@@ -84,6 +91,7 @@ function displayDate() {
       billingAddressRequirement: 'none',
       shippingAddressRequirement: 'none'
     }).then(function(paymentResponse) {
+      alert(paymentResponse.stripeToken); //pass the token to Stripe
       fetch('https://2727aae4.ngrok.io/charge.php', {
         method: 'POST',
         body: JSON.stringify({
@@ -98,9 +106,9 @@ function displayDate() {
         alert(err);
         ApplePay.completeLastTransaction('failure');
       });
-    }).catch(function(err) {
-      alert(err);
-      ApplePay.completeLastTransaction('failure');
+
+    }).catch(function(e) {
+      alert('Something went wrong. Please try again.');
     });
   }).catch(function(message) {
     alert('Apple pay is not supporting on this device.');
