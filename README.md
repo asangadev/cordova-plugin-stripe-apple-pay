@@ -67,6 +67,47 @@ ApplePay.makePaymentRequest(order)
     });
 ```
 
+### Quick Example
+
+```
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  ApplePay.canMakePayments().then(function(message) {
+    ApplePay.makePaymentRequest({
+      items: [{
+        label: 'Boost Juice Order',
+        amount: 7.60
+      }],
+      currencyCode: 'AUD',
+      countryCode: 'AU',
+      billingAddressRequirement: 'none',
+      shippingAddressRequirement: 'none'
+    }).then(function(paymentResponse) {
+      fetch('https://2727aae4.ngrok.io/charge.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          token: paymentResponse.stripeToken
+        }),
+        headers: {
+          'content-type': 'application/json'
+        }
+      }).then(function(response) {
+        ApplePay.completeLastTransaction('success');
+      }).catch(function(err) {
+        alert(err);
+        ApplePay.completeLastTransaction('failure');
+      });
+    }).catch(function(err) {
+      alert(err);
+      ApplePay.completeLastTransaction('failure');
+    });
+  }).catch(function(message) {
+    alert('Apple pay is not supporting on this device.');
+  });
+}
+```
+
 ### Example Response
 
 The `paymentResponse` is an object with the keys that contain the token itself,
