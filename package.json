@@ -10,17 +10,18 @@
     "type": "git",
     "url": "https://github.com/asangadev/cordova-plugin-stripe-apple-pay"
   },
-  "keywords": [
-    "cordova apple pay",
-    "cordova stripe apple pay"
-    "stripe ios cordova",
-    "apple pay cordova"
-  ],
   "author": {
     "name": "Asanga Dev",
     "email": "asanga.dev@gmail.com",
     "url": "https://github.com/asangadev/"
   },
   "license": "GPL-3.0",
-  "homepage": "https://github.com/asangadev/cordova-plugin-stripe-apple-pay"
+  "homepage": "https://github.com/asangadev/cordova-plugin-stripe-apple-pay",
+  "keywords": [
+    "stripe",
+    "cordova",
+    "apple pay cordova",
+    "apple pay phonegap",
+    "strip apple pay cordova"
+  ]
 }
