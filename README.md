@@ -76,7 +76,7 @@ function displayDate() {
   ApplePay.canMakePayments().then(function(message) {
     ApplePay.makePaymentRequest({
       items: [{
-        label: 'Boost Juice Order',
+        label: 'Sample Order',
         amount: 7.60
       }],
       currencyCode: 'AUD',
