@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-stripe-apple-pay",
+  "version": "1.0.0",
+  "description": "A Cordova plugin to provide Apple Pay functionality with Stripe integration.",
+  "main": "www/applepay.js",
+  "scripts": {
+    "postinstall": "node ./scripts/link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asangadev/cordova-plugin-stripe-apple-pay"
+  },
+  "keywords": [
+    "cordova apple pay",
+    "cordova stripe apple pay"
+    "stripe ios cordova",
+    "apple pay cordova"
+  ],
+  "author": {
+    "name": "Asanga Dev",
+    "email": "asanga.dev@gmail.com",
+    "url": "https://github.com/asangadev/"
+  },
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/asangadev/cordova-plugin-stripe-apple-pay"
+}
