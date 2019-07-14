@@ -1,14 +1,11 @@
-# Cordova Apple Pay Plugin
+# cordova-plugin-stripe-apple-pay
 
 > A dependency free Cordova plugin to provide Apple Pay functionality integrated with Stripe Framework.
 
 Updated to provide additional data access to the plugin, test calls, and compatibility
 with newer versions of Cordova. Uses a Promise based interface in JavaScript.
 
-This plugin is integrated to Stripe, if you want an integrated-less plugin you can use
-[cordova-plugin-applepay](https://www.npmjs.com/package/cordova-plugin-applepay)
-
-## Get your merchant ID
+# Get your merchant ID
 
 ##### Configure Apple Pay
 Follow these [instructions](https://help.apple.com/developer-account/#/devb2e62b839) to get your merchant ID.
