@@ -26,13 +26,13 @@ To switch between Stripe Test/Production mode, go to Build Settings on xCode and
 
 ### DEBUG MODE:
 
-[VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/ndebug.png)
+[VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/ndebug_screen.png)
 
 ![DEBUG MODE](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/ndebug.png "DNDEBUG")
 
 ### PRODUCTION MODE:
 
-[VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/dndebug.png)
+[VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/dndebug_screen.png)
 
 ![PRODUCTION MODE](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/dndebug.png "NDEBUG")
 
