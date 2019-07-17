@@ -10,6 +10,9 @@ with newer versions of Cordova. Uses a Promise based interface in JavaScript.
 ##### Configure Apple Pay
 Follow these [instructions](https://help.apple.com/developer-account/#/devb2e62b839) to get your merchant ID.
 
+##### Configure Stripe account
+Follow these [instructions](https://support.stripe.com/questions/enable-apple-pay-on-your-stripe-account).
+
 ##### Enable Apple Pay on xCode
 You can find more information [here](https://help.apple.com/xcode/mac/current/#/deva43983eb7).
 
