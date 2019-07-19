@@ -16,6 +16,10 @@ Follow these [instructions](https://support.stripe.com/questions/enable-apple-pa
 ##### Enable Apple Pay on xCode
 You can find more information [here](https://help.apple.com/xcode/mac/current/#/deva43983eb7).
 
+[VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/apple_pay.png)
+
+![ENABLE APPLE PAY ON XCODE](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/apple_pay.png "DNDEBUG")
+
 ## Installation
 ```
 $ cordova plugin add --save cordova-plugin-stripe-apple-pay \
