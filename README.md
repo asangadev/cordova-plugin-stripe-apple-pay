@@ -18,7 +18,7 @@ You can find more information [here](https://help.apple.com/xcode/mac/current/#/
 
 [VIEW SCREENSHOT](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/apple_pay.png)
 
-![ENABLE APPLE PAY ON XCODE](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/apple_pay.png "DNDEBUG")
+![ENABLE APPLE PAY ON XCODE](https://github.com/asangadev/cordova-plugin-stripe-apple-pay/blob/master/img/apple_pay.png "APPLE PAY")
 
 ## Installation
 ```
